@@ -43,7 +43,7 @@ namespace HotelFormApp
             command1.Parameters.AddWithValue("name", textBox3.Text);
             command1.ExecuteNonQuery();
             connect.Close();
-            MessageBox.Show("Region insert operation has been done successfully");
+            MessageBox.Show("GuestInformation insert operation has been done successfully");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace HotelFormApp
             command2.Parameters.AddWithValue("hotelno", int.Parse(textBox1.Text));
             command2.ExecuteNonQuery();
             connect.Close();
-            MessageBox.Show("Region delete operation has been done successfully");
+            MessageBox.Show("GuestInformation delete operation has been done successfully");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -64,7 +64,12 @@ namespace HotelFormApp
             command3.Parameters.AddWithValue("name", textBox3.Text);
             command3.ExecuteNonQuery();
             connect.Close();
-            MessageBox.Show("Region update operation has been done successfully");
+            MessageBox.Show("GuestInformation update operation has been done successfully");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
